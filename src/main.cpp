@@ -1577,7 +1577,7 @@ int64_t GetBlockValue(int nBits, int nHeight, const CAmount& nFees)
     */
 
     if(Params().NetworkID() == CBaseChainParams::TESTNET){
-        if(nHeight > 77900+576) nSubsidy -= nSubsidy/10;
+        if(nHeight > 57500) nSubsidy -= nSubsidy/10;
     } else {
         if(nHeight > 309759+(553*33)) nSubsidy -= nSubsidy/10; // 328008 - 10.0% - September 6, 2015
     }
